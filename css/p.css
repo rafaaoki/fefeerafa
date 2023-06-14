@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+
+:root{
+    --primary-color:  rgb(72, 61, 139);
+    --main-color: rgb(218,216,231);
+    --white: white;
+    --black: black;
+}   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Pangolin', cursive;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--main-color);
+}
+
+main{
+    padding-top: 30px;
+    background-color: var(--primary-color);
+    height: auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: auto;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--white);
+    border: 10px solid var(--white);
+    border-radius: 20px;
+    height: auto;
+    width: 550px;
+    max-width: 100%;
+    display: block;
+    text-align:justify;
+    padding: 15px;
+}
+
+.text p {
+    padding-bottom: 22px;
+    text-indent: 15px;
+}
+
+
+.div2-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    max-width: 100%;
+    height: auto;
+    padding-bottom:100px ;
+}
+
+.div2-button button{
+    border-radius: 20px;
+    background-color: #dad8e7;
+}
+
+.button {
+    display: inline-block;
+    background-color: #dad8ee;
+    color: var(--black);
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;  
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #483d8b;
+    transition: background-color 0.3s;
+}
+
+
+.foto_casal {
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+
+}
+
+.foto_casal img{
+    height: 400px;
+    width: auto;
+    margin: 20px;
+    flex-wrap: wrap; 
+}
+
+.paragrafo{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+footer {
+    background-color: rgb(238, 238, 227);
+    padding: 20px;
+    
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container p {
+    font-size: 14px;
+    color: #423f3f;
+}
+
+
+@media only screen and (max-width: 600px) {
+    main{
+        padding: 30px;
+        height: auto;
+    }
+    .text {
+        width: 100%;
+        border-width: 5px;
+        padding: 10px;
+    }
+    header{
+        text-align: center;
+    }
+    .div2-button{
+        width: 100%;
+        border-width: 5px;
+    }
+    .foto_casal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-width: 5px;
+        text-align: center;
+        
+    }
+    .foto_casal img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+}
